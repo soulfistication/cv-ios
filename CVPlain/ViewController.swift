@@ -10,9 +10,35 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    // MARK: UIViewController
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    @IBOutlet weak var pictureImageView: UIImageView!
+
+    @IBOutlet weak var headerView: UIView!
+
+    override var prefersStatusBarHidden: Bool {
+        return true
     }
 
+    // MARK: UIViewController
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        roundPicture()
+        createHeaderShadow()
+    }
+
+    // MARK: UI
+
+    func roundPicture() {
+        pictureImageView.layer.cornerRadius = pictureImageView.frame.width / 2
+        pictureImageView.clipsToBounds = true
+    }
+
+    func createHeaderShadow() {
+        headerView.layer.masksToBounds = false
+        headerView.layer.shadowColor = UIColor.black.cgColor
+        headerView.layer.shadowOpacity = 0.5
+        headerView.layer.shadowOffset = CGSize.zero
+        headerView.layer.shadowRadius = 20
+    }
 }
