@@ -24,6 +24,11 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var aboutView: UIView!
 
+    // Technologies
+
+    @IBOutlet weak var technologiesView: UIView!
+
+
     // MARK: UIViewController
 
     override func viewDidLoad() {
@@ -31,6 +36,7 @@ class ViewController: UIViewController {
 
         setupHeader()
         setupAbout()
+        setupTechnologies()
     }
 
     // MARK: UI
@@ -55,6 +61,19 @@ class ViewController: UIViewController {
 
     func setupAbout() {
         aboutView.layer.cornerRadius = 5
-        aboutView.clipsToBounds = true
+        aboutView.clipsToBounds = false
+        aboutView.layer.shadowColor = UIColor.black.cgColor
+        aboutView.layer.shadowOpacity = 0.5
+        aboutView.layer.shadowOffset = CGSize.zero
+        aboutView.layer.shadowRadius = 20
+    }
+
+    func setupTechnologies() {
+        technologiesView.layer.cornerRadius = 5
+        technologiesView.clipsToBounds = false
+        technologiesView.layer.shadowColor = UIColor.black.cgColor
+        technologiesView.layer.shadowOpacity = 0.5
+        technologiesView.layer.shadowOffset = CGSize.zero
+        technologiesView.layer.shadowRadius = 20
     }
 }

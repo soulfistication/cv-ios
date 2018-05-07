@@ -25,7 +25,7 @@
                                 <rect key="frame" x="0.0" y="170" width="768" height="854"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x6P-sg-5rR">
-                                        <rect key="frame" x="23" y="25" width="526" height="80"/>
+                                        <rect key="frame" x="25" y="25" width="526" height="80"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xvh-J7-Mlr">
                                                 <rect key="frame" x="20" y="10" width="486" height="60"/>
@@ -46,11 +46,35 @@ Objective-C and Swift.</string>
                                             <constraint firstItem="xvh-J7-Mlr" firstAttribute="top" secondItem="x6P-sg-5rR" secondAttribute="top" constant="10" id="n3A-fb-4dx"/>
                                         </constraints>
                                     </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xdc-xs-eBr" userLabel="Technologies View">
+                                        <rect key="frame" x="223" y="130" width="520" height="80"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pWQ-tg-koT">
+                                                <rect key="frame" x="20" y="8" width="480" height="64"/>
+                                                <string key="text">Technologies:
+Xcode: Auto Layout, Storyboards, Core Image, Alamofire, JSON
+LLDB</string>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="pWQ-tg-koT" secondAttribute="trailing" constant="20" id="3fJ-ZF-zvf"/>
+                                            <constraint firstItem="pWQ-tg-koT" firstAttribute="top" secondItem="xdc-xs-eBr" secondAttribute="top" constant="8" id="42a-V5-gan"/>
+                                            <constraint firstItem="pWQ-tg-koT" firstAttribute="leading" secondItem="xdc-xs-eBr" secondAttribute="leading" constant="20" id="RcH-jz-8ch"/>
+                                            <constraint firstAttribute="height" constant="80" id="fQp-la-Mqi"/>
+                                            <constraint firstAttribute="bottom" secondItem="pWQ-tg-koT" secondAttribute="bottom" constant="8" id="ftK-yo-oWD"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstItem="xdc-xs-eBr" firstAttribute="top" secondItem="x6P-sg-5rR" secondAttribute="bottom" constant="25" id="78p-x0-lfd"/>
                                     <constraint firstItem="x6P-sg-5rR" firstAttribute="top" secondItem="d0i-ne-3VU" secondAttribute="top" constant="25" id="Zwh-8m-m4H"/>
-                                    <constraint firstItem="x6P-sg-5rR" firstAttribute="leading" secondItem="d0i-ne-3VU" secondAttribute="leading" constant="23" id="bNA-5m-V96"/>
+                                    <constraint firstAttribute="trailing" secondItem="xdc-xs-eBr" secondAttribute="trailing" constant="25" id="aOd-r6-mwY"/>
+                                    <constraint firstItem="x6P-sg-5rR" firstAttribute="leading" secondItem="d0i-ne-3VU" secondAttribute="leading" constant="25" id="bNA-5m-V96"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wgB-SM-d8b" userLabel="Header View">
@@ -124,6 +148,7 @@ Objective-C and Swift.</string>
                         <outlet property="aboutView" destination="x6P-sg-5rR" id="fuG-TJ-kmz"/>
                         <outlet property="headerView" destination="wgB-SM-d8b" id="Hue-aD-4S9"/>
                         <outlet property="pictureImageView" destination="CM0-q5-IcJ" id="1c8-UZ-rU4"/>
+                        <outlet property="technologiesView" destination="xdc-xs-eBr" id="Y63-Ps-RQQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
