@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    // Header
+
     @IBOutlet weak var pictureImageView: UIImageView!
 
     @IBOutlet weak var headerView: UIView!
@@ -18,16 +20,25 @@ class ViewController: UIViewController {
         return true
     }
 
+    // About
+
+    @IBOutlet weak var aboutView: UIView!
+
     // MARK: UIViewController
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        roundPicture()
-        createHeaderShadow()
+        setupHeader()
+        setupAbout()
     }
 
     // MARK: UI
+
+    func setupHeader() {
+        roundPicture()
+        createHeaderShadow()
+    }
 
     func roundPicture() {
         pictureImageView.layer.cornerRadius = pictureImageView.frame.width / 2
@@ -40,5 +51,10 @@ class ViewController: UIViewController {
         headerView.layer.shadowOpacity = 0.5
         headerView.layer.shadowOffset = CGSize.zero
         headerView.layer.shadowRadius = 20
+    }
+
+    func setupAbout() {
+        aboutView.layer.cornerRadius = 5
+        aboutView.clipsToBounds = true
     }
 }
