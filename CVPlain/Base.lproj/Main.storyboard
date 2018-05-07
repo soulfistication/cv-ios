@@ -17,12 +17,89 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="touchbar-wall" translatesAutoresizingMaskIntoConstraints="NO" id="fkQ-tz-pdf" userLabel="Background View">
+                                <rect key="frame" x="0.0" y="170" width="768" height="854"/>
+                            </imageView>
+                            <view alpha="0.65000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d0i-ne-3VU" userLabel="Overlay View">
+                                <rect key="frame" x="0.0" y="170" width="768" height="854"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wgB-SM-d8b" userLabel="Header View">
+                                <rect key="frame" x="0.0" y="20" width="768" height="150"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ivan Almada" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XAo-UV-JYg">
+                                        <rect key="frame" x="135" y="28" width="250" height="58"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Senior iOS Engineer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dAb-q1-zHL">
+                                        <rect key="frame" x="135" y="86" width="215" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ivan.almada@me.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LaY-tu-BEA">
+                                        <rect key="frame" x="529" y="36" width="211" height="27"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+420 733 866 722" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hrH-NW-6Of">
+                                        <rect key="frame" x="562" y="83" width="178" height="26"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ivan" translatesAutoresizingMaskIntoConstraints="NO" id="CM0-q5-IcJ">
+                                        <rect key="frame" x="25" y="28" width="85" height="85"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="85" id="3ti-Rk-0Qq"/>
+                                            <constraint firstAttribute="width" constant="85" id="j5e-KE-I43"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.18870294986642555" green="0.18870294986642555" blue="0.18870294986642555" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="hrH-NW-6Of" firstAttribute="trailing" secondItem="LaY-tu-BEA" secondAttribute="trailing" id="3X2-4b-wku"/>
+                                    <constraint firstItem="hrH-NW-6Of" firstAttribute="top" secondItem="LaY-tu-BEA" secondAttribute="bottom" constant="20" id="94w-0a-eeK"/>
+                                    <constraint firstItem="XAo-UV-JYg" firstAttribute="top" secondItem="wgB-SM-d8b" secondAttribute="top" constant="28" id="Cdb-u6-t5P"/>
+                                    <constraint firstItem="dAb-q1-zHL" firstAttribute="top" secondItem="XAo-UV-JYg" secondAttribute="bottom" id="FlX-Kp-bGd"/>
+                                    <constraint firstItem="LaY-tu-BEA" firstAttribute="top" secondItem="wgB-SM-d8b" secondAttribute="top" constant="36" id="HL2-GU-MEW"/>
+                                    <constraint firstItem="XAo-UV-JYg" firstAttribute="leading" secondItem="dAb-q1-zHL" secondAttribute="leading" id="N8f-SR-T3O"/>
+                                    <constraint firstAttribute="height" constant="150" id="TdT-kc-9y1"/>
+                                    <constraint firstAttribute="trailing" secondItem="LaY-tu-BEA" secondAttribute="trailing" constant="28" id="Ucs-A3-0Va"/>
+                                    <constraint firstItem="XAo-UV-JYg" firstAttribute="leading" secondItem="CM0-q5-IcJ" secondAttribute="trailing" constant="25" id="XpK-EH-Auj"/>
+                                    <constraint firstItem="CM0-q5-IcJ" firstAttribute="leading" secondItem="wgB-SM-d8b" secondAttribute="leading" constant="25" id="dbf-y1-Mdp"/>
+                                    <constraint firstItem="CM0-q5-IcJ" firstAttribute="top" secondItem="wgB-SM-d8b" secondAttribute="top" constant="28" id="wi7-8K-vhU"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="d0i-ne-3VU" firstAttribute="leading" secondItem="fkQ-tz-pdf" secondAttribute="leading" id="9Fa-jL-YtW"/>
+                            <constraint firstItem="d0i-ne-3VU" firstAttribute="trailing" secondItem="fkQ-tz-pdf" secondAttribute="trailing" id="Bwf-hr-Ynv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fkQ-tz-pdf" secondAttribute="trailing" id="Cg1-EL-xdQ"/>
+                            <constraint firstItem="fkQ-tz-pdf" firstAttribute="top" secondItem="wgB-SM-d8b" secondAttribute="bottom" id="F5f-MP-v3T"/>
+                            <constraint firstItem="wgB-SM-d8b" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="JEN-O8-BTD"/>
+                            <constraint firstItem="d0i-ne-3VU" firstAttribute="bottom" secondItem="fkQ-tz-pdf" secondAttribute="bottom" id="K8c-cA-hZU"/>
+                            <constraint firstItem="fkQ-tz-pdf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="LvB-Tg-2yd"/>
+                            <constraint firstItem="wgB-SM-d8b" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="M44-lO-G1j"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fkQ-tz-pdf" secondAttribute="bottom" id="Yls-PY-gUU"/>
+                            <constraint firstItem="wgB-SM-d8b" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hH2-aG-8XC"/>
+                            <constraint firstItem="d0i-ne-3VU" firstAttribute="top" secondItem="fkQ-tz-pdf" secondAttribute="top" id="jH2-be-qZu"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="25.78125" y="37.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ivan" width="85" height="85"/>
+        <image name="touchbar-wall" width="958" height="540"/>
+    </resources>
 </document>
